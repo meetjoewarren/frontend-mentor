@@ -1,0 +1,22 @@
+[
+  {
+    "views": "10K pageviews",
+    "price": "8.00"
+  },
+  {
+    "views": "50K pageviews",
+    "price": "12.00"
+  },
+  {
+    "views": "100K pageviews",
+    "price": "16.00"
+  },
+  {
+    "views": "500K pageviews",
+    "price": "24.00"
+  },
+  {
+    "views": "1M pageviews",
+    "price": "36.00"
+  }
+]

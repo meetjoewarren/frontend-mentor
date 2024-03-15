@@ -1,0 +1,26 @@
+$white: hsl(0, 0%, 100%);               // Pure white (pricing background)
+$black: rgb(0, 0, 0);                   // Pure black
+$cyan-soft: hsl(174, 77%, 80%);         // Full slider bar
+$cyan-strong: hsl(174, 86%, 45%);       // Slider background
+$red-light: hsl(15, 100%, 70%);         // Discount text
+$red-gray-light: hsl(14, 92%, 95%);     // Discount background
+$blue-pale: hsl(226, 100%, 87%);        // CTA text
+$blue-v-pale: hsl(230, 100%, 99%);      // Main background
+$blue-light-gray: hsl(224, 65%, 95%);   // Empty slider bar
+$blue-lighter-gray: hsl(223, 50%, 87%); // Toggle background
+$blue-gray: hsl(225, 20%, 60%);         // Text
+$blue-dark: hsl(227, 35%, 25%);         // Text & CTA background
+
+$bg-body: $blue-v-pale;
+$bg-main: $white;
+$bg-cta: $blue-dark;
+$bg-discount: $red-gray-light;
+$bg-slider-btn: $cyan-strong;
+$bg-slider-empty: $blue-light-gray;
+$bg-slider-full: $cyan-soft;
+$bg-toggle: $blue-lighter-gray;
+
+$txt-cta: $blue-pale;
+$txt-cta-secondary: $blue-dark;
+$txt-discount: $red-light;
+$txt-main: $blue-gray;

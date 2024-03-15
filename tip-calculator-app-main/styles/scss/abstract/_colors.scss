@@ -1,0 +1,23 @@
+$cyan-strong: hsl(172, 67%, 45%);
+$cyan-v-dark: hsl(183, 100%, 15%);
+$cyan-gray: hsl(184, 14%, 56%);
+$cyan-gray-dark: hsl(186, 14%, 43%);
+$cyan-gray-light: hsl(185, 41%, 84%);
+$cyan-gray-v-light: hsl(200, 37%, 97%);
+$white: hsl(0, 0%, 100%);
+$red: hsl(0, 58%, 55%);
+
+$bg-body: $cyan-gray-light;
+$bg-content: $white;
+$bg-content-alt: $cyan-v-dark;
+$bg-input: $cyan-gray-v-light;
+
+$txt-clr-main: $cyan-gray-dark;
+$txt-clr-output-bright: $cyan-strong;
+
+$clr-primary: $cyan-v-dark;
+$clr-secondary: $cyan-gray-v-light;
+$clr-accent: $cyan-strong;
+$clr-warning: $red;
+
+$btn-empty: hsl(186, 40%, 30%);

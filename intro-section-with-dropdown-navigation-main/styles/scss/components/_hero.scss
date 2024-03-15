@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  gap: 40px;
+  max-height: calc(100vh - 100px);
+  padding-top: 50px;
+
+  &__content {
+    align-self: center;
+    flex-grow: 1;
+    max-width: 700px;
+
+    p {
+      color: $text-clr;
+      line-height: 1.5;
+    }
+
+    button {
+      background: transparent;
+      color: $btn-clr;
+      font-weight: bold;
+
+      a {
+        background: $btn-bg;
+        border-radius: $border-radius;
+        color: $btn-clr;
+        padding: 20px 30px;
+        text-decoration: none;
+
+        &:hover {
+          background: transparent;
+          border: 2px solid $border-clr-hover;
+          color: $btn-clr-hover;
+        }
+      }
+    }
+
+    //FEATURED
+    .featured__clients {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      max-width: 500px;
+    }
+  }
+
+  // HERO IMAGE
+  &__img {
+    justify-self: flex-end;
+  }
+}

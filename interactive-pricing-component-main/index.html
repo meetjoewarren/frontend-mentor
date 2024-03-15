@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles/css/main.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="js/script.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>
+        Simple, traffic-based pricing
+        <span class="subhead">
+          Sign-up for our 30-day trial. No credit card required.
+        </span>
+      </h1>
+    </header>
+    <main class="main">
+      <section class="main__content">
+        <div class="pageview">100K Pageviews</div>
+        <div class="slider">
+          <input type="range" id="slider__selector" class="slider__selector slider__input" min="1" max="5">
+        </div>
+        <div class="pricing">
+          <span class="price">$16.00</span>
+          <span class="cycle"> / month</span>
+        </div>
+        <div class="sub">
+          <p class="sub__label">Monthly Billing</p>
+          <label class="sub__switch" for="sub__input">
+            <input type="checkbox" name="" id="sub__input" class="slider__input">
+            <span class="sub__switch--slider round"></span>
+          </label>
+          <p class="sub__label">Yearly Billing <span class="discount">-25%</span></p>
+        </div>
+        <hr>
+        <ul class="perks">
+          <li class="perks__item">Unlimited websites</li>
+          <li class="perks__item">100% data ownership</li>
+          <li class="perks__item">Email Reports</li>
+        </ul>
+        <button class="cta__trial">
+          Start my trial
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Joseph Warren</a>.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

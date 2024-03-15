@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.1.1/dist/chart.umd.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/css/main.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content-grid">
+      <header class="header">
+        <div class="balance">
+          <p>My balance</p>
+          <h2>$921.48</h2>
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+      </header>
+      <main class="content">
+        <h2>Spending - Last 7 dayıs</h2>
+        
+        <div class="graph">
+          <canvas id="chart"></canvas>
+        </div>
+        
+        <div class="overview">
+          <div class="overview__total">
+            <p>Total this month</p>
+            <h2>$478.33</h2>
+          </div>
+          <div class="overview__change">
+            <p class="percent">+2.4%</p>
+            <p class="timeframe">from last month</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Joseph Warren</a>.
+    </div>
+  </div>
+</body>
+</html>

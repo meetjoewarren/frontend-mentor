@@ -1,0 +1,122 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-grid {
+  background: radial-gradient(circle at top center, hsl(220, 13%, 18%), hsl(218, 25%, 13%));
+  border-radius: 30px;
+  max-width: 410px;
+  padding: 30px;
+}
+
+.rating-content .icon {
+  background: hsl(213, 19%, 18%);
+  border-radius: 25px;
+  line-height: 50px;
+  height: 45px;
+  text-align: center;
+  width: 45px;
+}
+.rating-content h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin: 35px 0 25px;
+}
+.rating-content p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.rating {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 50px);
+  justify-content: center;
+  list-style-type: none;
+}
+.rating li {
+  background: hsl(213, 19%, 18%);
+  border-radius: 25px;
+  color: hsl(217, 12%, 63%);
+  height: 50px;
+  line-height: 50px;
+  margin: 30px 0;
+  text-align: center;
+  width: 50px;
+}
+.rating li:hover {
+  background: hsl(25, 98%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.rating li.selected {
+  background: hsl(217, 12%, 63%);
+  color: hsl(216, 12%, 8%);
+}
+
+.review button {
+  background: hsl(25, 98%, 53%);
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.review button:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 98%, 53%);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.thanks-content {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+.thanks-content .thanks-image {
+  margin: 10px 0 30px;
+}
+.thanks-content .user-selection {
+  background: hsl(213, 19%, 18%);
+  border-radius: 25px;
+  color: hsl(25, 98%, 53%);
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 20px;
+}
+.thanks-content h1 {
+  margin: 40px 0 20px;
+}
+.thanks-content p {
+  color: hsl(217, 12%, 63%);
+}
+
+.attribution {
+  color: hsl(217, 12%, 63%);
+  font-size: 11px;
+  margin-top: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(217, 12%, 63%);
+}

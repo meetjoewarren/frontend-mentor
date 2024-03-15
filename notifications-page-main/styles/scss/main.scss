@@ -1,0 +1,163 @@
+
+$bg-body: hsl(210, 60%, 98%);
+$bg-container: hsl(0, 0%, 100%);
+$bg-new-notif: hsl(200, 50%, 98%);
+
+$link-post: hsl(219, 12%, 42%);
+$link-group: hsl(219, 85%, 26%);
+$link-username: hsl(255, 100%, 0);
+
+$text-main: hsl(219, 12%, 42%) ;
+$text-time: hsl(219, 14%, 63%);
+
+$new-notif-dot:hsl(1, 90%, 64%);
+
+$pm-border: hsl(211, 68%, 94%);
+
+$new:
+
+hsl(224, 21%, 14%);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: $bg-body;
+    color: $text-main;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    padding: 40px 0;
+}
+
+.container {
+    background: $bg-container;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 730px;
+    padding: 40px 30px 20px 30px;
+}
+
+.notify__bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        background: transparent;
+        border: 0;
+        color: $link-post;
+        font-size: 16px;
+        margin-bottom: 30px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+h1,
+.post-entry .username {
+    color: $link-username;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0 0 30px; 
+
+    & span {
+        background: $link-group;
+        border-radius: 4px;
+        color: #FFF;
+        font-size: 16px;
+        padding: 5px 13px;
+    }
+}
+
+.post__body {
+    align-items: center;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    margin-bottom: 10px;
+
+    &.unread {
+        background: hsl(192, 45%, 98%);
+    }
+}
+
+.user-photo {
+    align-self: flex-start;
+    padding: 20px 15px;
+
+    & img {
+        height: auto;
+        width: 45px;
+    }
+}
+
+.post-entry {
+    padding: 20px 20px 20px 0;
+
+    > span {
+      min-width: max-content;
+    }
+
+    .username {
+        color: $link-username;
+        font-weight: 800;
+        margin-right: 5px;
+    }
+    .object {
+        position: relative;
+
+        img {
+            border-radius: 8px;
+            height: auto;
+            width: 45px;
+        }
+    }
+    .post-link {
+        color: $link-post;
+        font-weight: 800;
+    }
+
+    .group-link {
+        color: $link-group;
+        font-weight: 800;
+    }
+
+    .date {
+        color: $text-time;
+        display: block;
+    }
+    
+    .pm {
+        border: 1px solid $pm-border;
+        border-radius: 4px;
+        margin: 10px 20px 10px 0;
+        padding: 20px;
+        
+        p {
+            margin:0;
+        }
+    }
+
+    .unread-item {
+        align-items: center;
+        background: $new-notif-dot;
+        border-radius: 4px;
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+    }
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}

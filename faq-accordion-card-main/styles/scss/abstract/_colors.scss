@@ -1,0 +1,15 @@
+$red-soft: hsl(14, 88%, 65%); // Text accent
+$violet-soft: hsl(273, 75%, 66%); // Gradient
+$blue-soft: hsl(240, 73%, 65%); // Gradient
+$blue-gray-light: hsl(240, 5%, 91%); // Divider
+$blue-gray-dark: hsl(240, 6%, 50%); // Text
+$blue-gray-v-dark: hsl(237, 12%, 33%); // Text
+$blue-v-dark: hsl(238, 29%, 16%); // Text
+
+
+$gradient-bg: linear-gradient($violet-soft, $blue-soft);
+$txt-primary: $blue-gray-dark;
+$txt-primary-open: $blue-gray-v-dark;
+$txt-secondary: $blue-v-dark;
+$txt-accent: $red-soft;
+$divider: $blue-gray-light;

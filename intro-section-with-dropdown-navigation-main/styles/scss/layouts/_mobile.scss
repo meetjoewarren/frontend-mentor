@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1030px) {
+  .container {
+    width: 100%;
+  }
+
+  .nav {
+    padding: 23px;
+
+    .menu-btn {
+      display: block;
+    }
+
+    .navbar {
+      align-items: initial;
+      background: hsl(255, 100%, 100%);
+      box-shadow: 
+        -250px 0 hsla(0deg 0% 0% / 80%),
+        -500px 0 hsl(0deg 0% 0% / 80%),
+        -750px 0 hsl(0deg 0% 0% / 80%),
+        -1000px 0 hsl(0deg 0% 0% / 80%);
+      display: none;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: flex-start;
+      min-width: 250px;
+      padding: 80px 25px 25px;
+      position: fixed;
+      right: 0;
+      top: 0;
+
+      .dropdown-content {
+        border-radius: 0;
+        box-shadow: none;
+        padding-bottom: 0;
+        position: initial;
+      }
+
+      .login {
+        margin: 0;
+      }
+      
+      .login,
+      .register {
+        align-self: center;
+      }
+    }
+  }
+
+  .hero {
+    flex-direction: column;
+  
+    &__img {
+      aspect-ratio: 125 / 94;
+      height: auto;
+      width: 100%;
+      order: 0;
+    }
+    
+    &__content {
+      order: 1;
+      text-align: center;
+      width: 100%;
+  
+      h1 {
+        font-size: calc((100vw - 40px) / $default-fs);
+        margin: 50px 0 30px 0;
+      }
+
+      p {
+        margin-bottom: 50px;
+        padding: 0 20px;
+      }
+
+      button {
+        margin-bottom: 60px;
+      }
+
+      .featured__clients {
+        margin: 0 auto 40px;
+      }
+    }
+  }
+
+  .img-desktop { 
+    display: none;
+  }
+
+  .img-mobile { 
+    display: block;
+    margin: 0 auto;
+  }
+
+  .block {
+    display: inline-block;
+  }
+}

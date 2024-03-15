@@ -1,0 +1,148 @@
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$Orange: hsl(25, 98%, 53%);
+
+$Gradient-Dark-Blue: hsl(218, 25%, 13%);
+$Gradient-Light-Blue: hsl(220, 13%, 18%);
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $Very-Dark-Blue;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-grid {
+    background: radial-gradient(circle at top center, $Gradient-Light-Blue, $Gradient-Dark-Blue);
+    border-radius: 30px;
+     max-width: 410px;
+    padding: 30px;
+}
+
+.rating-content {
+    .icon {
+        background: $Dark-Blue;
+        border-radius: 25px;
+        line-height: 50px;
+        height: 45px;
+        text-align: center;
+        width: 45px;
+    }
+
+    h1 {
+        color: $White;
+        font-weight: 700;
+        margin:35px 0 25px;
+    }
+
+    p {
+        color: $Light-Grey;
+        line-height: 1.5;
+    }
+}
+
+.rating {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 50px);
+    justify-content: center;
+    list-style-type: none;
+
+    li {
+        background: $Dark-Blue;
+        border-radius: 25px;
+        color: $Light-Grey;
+        height: 50px;
+        line-height: 50px;
+        margin: 30px 0;
+        text-align: center;
+        width: 50px;
+
+        &:hover {
+            background: hsl(25, 98%, 53%);
+            color: $White;
+            cursor: pointer;
+        }
+
+        &.selected {
+            background: $Light-Grey;
+            color: $Very-Dark-Blue;
+        }
+    }
+}
+
+.review {
+
+    button {
+        background: $Orange;
+        border-radius: 25px;
+        color: $White;
+        font-weight: 700;
+        height: 50px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        width: 100%;
+
+        &:hover {
+            background: $White;
+            color: $Orange;
+            cursor: pointer;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.thanks-content {
+    color: $White;
+    text-align: center;
+
+    .thanks-image {
+        margin: 10px 0 30px;
+    }
+
+    .user-selection {
+        background: $Dark-Blue;
+        border-radius: 25px;
+        color: $Orange;
+        height: 30px;
+        line-height: 30px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        margin: 40px 0 20px;
+    }
+
+    p {
+        color: $Light-Grey;
+    }
+}
+
+.attribution { 
+    color: $Light-Grey;
+    font-size: 11px;
+    margin-top: 1rem;
+    text-align: center;
+
+    a {
+        color: $Light-Grey;
+    }
+}

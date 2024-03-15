@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="js/script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container full-height vertically-centered">
+    <div class="logo">
+      <img src="images/logo.svg" alt="Splitter: Tipping App">
+    </div>
+    <main class="main">
+      <section class="input-container">
+        <label for="bill-total">
+          <h2 class="label">Bill <span></span></h2>
+          <input class="bill-icon bill-total" id="bill-total" type="text" placeholder="0">
+        </label>
+
+        <div class="tip-container">
+          <h2 class="label">Select Tip %</h2>
+          <div class="btn-group btn-grid">
+            <button type="button" class="btn-primary btn-percent col-sm-3 col-lg-2">5%</button>
+            <button type="button" class="btn-primary btn-percent col-sm-3 col-lg-2">10%</button>
+            <button type="button" class="btn-primary btn-percent col-sm-3 col-lg-2">15%</button>
+            <button type="button" class="btn-primary btn-percent col-sm-3 col-lg-2">25%</button>
+            <button type="button" class="btn-primary btn-percent col-sm-3 col-lg-2">50%</button>
+            <input type="text" class="btn-primary btn-custom col-sm-3 col-lg-2" id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+
+        <label for="people-total">
+          <h2 class="label">Number Of People <span></span></h2>
+          <input class="people-icon people-total" id="people-total" type="text" placeholder="0">
+        </label>
+      </section>
+      <aside class="output-container">
+        <div class="expense-item">
+          <p class="title">Tip Amount <span class="subtitle">/ person</span></p>
+          <p class="total total-tip">$0.00</p>
+        </div>
+        <div class="expense-item">
+          <p class="title">Total <span class="subtitle">/ person</span></p>
+          <p class="total total-due">$0.00</p>
+        </div>
+        <button class="btn-primary btn-reset full-width" type="button">RESET</button>
+      </aside>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Joseph Warren</a>.
+    </div>
+  </div>
+</body>
+</html>

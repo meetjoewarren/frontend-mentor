@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+@import 'abstract/colors';
+
+$btn-bg: $darker-gray;
+$btn-clr: $very-light-gray;
+$btn-clr-hover: $darker-gray;
+$border-clr: $medium-gray;
+$border-clr-hover: $darker-gray;
+$border-radius: 1rem;
+$text-clr: $medium-gray;
+$link-clr: $medium-gray;
+$link-clr-hover: $darker-gray;
+$default-fs: 18;
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: $default-fs + px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 85%;
+}
+
+// MAIN MENU (UI)
+@import 'components/nav';
+
+// HERO CONTENT
+@import 'components/hero';
+
+// DESKTOP
+@import 'layouts/desktop';
+
+// MOBILE
+@import 'layouts/mobile';
+
+.attribution {
+    background: hsl(255deg 100% 100%);
+    bottom: 0;
+    font-size: 11px;
+    height: 20px;
+    right: 0;
+    line-height: 20px;
+    padding: 2px 8px;
+    position: fixed;
+    text-align: center;
+    width: max-content;
+
+    a {
+      color: $link-clr;
+    }
+}

@@ -1,0 +1,43 @@
+@media only screen and (min-width: 1030px) {
+  .nav {
+    .navbar {
+      display: flex;
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  .hero {
+    &__content {
+      h1 {
+        font-size: calc(105 / $default-fs) + rem;
+        padding: 0 0 70px 0;
+      }
+      p {
+        max-width: 430px;
+        padding-bottom: 55px;
+      }
+      button {
+        margin-bottom: 100px;
+      }
+    }
+    
+    &__img {
+      margin-left: auto;
+      
+      img {
+        aspect-ratio: 3 / 4;
+        max-height: calc(100vh - 305px);
+      }
+    }
+  }
+
+  .img-desktop { display: block; }
+  .img-mobile { display: none; }
+
+  .block {
+    display: block;
+  }
+}
